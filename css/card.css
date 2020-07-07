@@ -1,0 +1,53 @@
+/* 針對從Bootstrap套件中使用的Card，於本網站的樣式管理 */
+/* home-cardstyle: 主頁中的Card樣式 */
+.home-cardstyle{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+
+/* title-style-card: 主頁Card內的中文標題 樣式設定 */
+.title-style-card{
+    font-size: 39px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+/* title-style-card-eng: 主頁Card內的英文副標題 樣式設定 */
+.title-style-card-eng{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/* member-p-title: 社團幹部主頁面中，個人名稱格式 */
+.member-p-title{
+    font-weight: bolder;
+}
+
+/* member-p-job: 社團幹部主頁面中，個人職位格式 */
+.member-p-job{
+    font-weight: normal;
+}
+
+/* self-intro: 個人介紹文字格式 */
+.self-intro{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+/* ig-link: IG連結 */
+.ig-link{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Button區 */
+/* home-button: 主頁Card內按鈕設定 */
+.home-button{
+    font-size: 20px;
+    font-weight: lighter;
+    border-radius: 18px;
+}

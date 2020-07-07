@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+<head>
+    <meta charset="UTF-8">
+    <!-- Taipei Camera Club主頁 -->
+    <title>Taipei Camera Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 網頁上方的LOGO標示 -->
+    <link rel="icon" href="photo_resources/headmark/hm_logo.ico" type="image/x-icon">
+    <!-- Google Font 使用字體 -->
+    <!-- 思源黑體 Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--套用Bootstrap的配件-->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--自訂CSS-->
+    <link rel="stylesheet" href="css/basicstyle.css">
+    <link rel="stylesheet" href="css/fontstyle.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body onload="init()" style="background-color: #f3f3f3">
+    <!-- 網頁上方索引 (navigation) -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navigation" style="max-width: 100%">
+      <!-- TCC LOGO，同時是Homepage的連結處 -->
+      <a href="homepage.html" class="home-button-img" ><img src="photo_resources/headmark/logomark.png" width="115" height="40" alt="TCC-LOGO"></a>
+      <!-- 通往主要分頁的連結處 -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link active noto nav-link-page" href="about.html">社團介紹</a>
+                <a class="nav-item nav-link active noto nav-link-page" href="member.html">社團幹部</a>
+                <a class="nav-item nav-link active noto nav-link-page" href="joinform.html">加入TCC</a>
+                <a class="nav-item nav-link active noto nav-link-page" href="QA.html">社團Q&A</a>
+            </div>
+        </div>
+    </nav>
+    <!-- 主頁封面照片 -->
+    <div align="center" class="home-image" style="background-image: url('photo_resources/homepage/index/DSC_6486.jpg');">
+        <!-- 網頁宣傳標語 -->
+        <div align="center" class="noto home-img-word">在台北，享受攝影</div>
+        <!--  Taipei Camera Club 名稱 -->
+        <div align="center" class="english-font home-img-tcc-word">Taipei Camera Club</div>
+        <!-- Facebook, Instagram 連結 -->
+        <div style="margin-top: 15px">
+            <a href="https://www.instagram.com/taipeicameraclub/?hl=zh-tw" target="_blank">
+                <img src="headmark/iglogo.jpg" class="home-app" alt="Instagram Link" width="50px"></a>
+            <a href="https://www.facebook.com/taipeicameraclub/" target="_blank">
+                <img src="headmark/facebooklogo.png" class="home-app" alt="Facebook Link" width="50px" style="margin-left: 10px"></a>
+        </div>
+    </div>
+    <!-- 分別導向各個主要分頁的區塊Card -->
+    <!-- 照片比例：統一使用16:9格式 -->
+    <!-- 1. 社團介紹 -->
+    <div class="card mb-3 home-cardstyle">
+        <div class="row no-gutters">
+            <div class="col-md-5">
+                <img src="photo_resources/homepage/guide/DSC_4751.jpg" class="card-img" alt="社團介紹" width="100%" height="100%" style="border-radius: 25px">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body" align="center">
+                    <div class="card-title noto title-style-card">社團介紹</div>
+                    <div class="title-style-card-eng english-font" style="color: #a0025c;" >About Us</div>
+                    <hr width="40%" size="8px">
+                    <button onclick="location.href='about.html'" type="button" class="btn home-button" style="background-color: #a0025c;color: white;">更多資訊</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2. 社團幹部 -->
+    <div class="card mb-3 home-cardstyle">
+      <div class="row no-gutters">
+        <div class="col-md-7">
+          <div class="card-body" align="center">
+            <div class="card-title noto title-style-card">社團幹部</div>
+            <div class="title-style-card-eng english-font" style="color: #2bb179;">Member</div>
+            <hr width="40%" size="8px">
+            <button onclick="location.href='member.html'" type="button" class="btn home-button" style="background-color: #2bb179;color: white;">更多資訊</button>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img src="photo_resources/homepage/guide/DSC_0262.jpg" class="card-img" alt="社團幹部" width="100%" height="100%" style="border-radius: 25px">
+        </div>
+      </div>
+    </div>
+    <!-- 3. 加入TCC -->
+    <div class="card mb-3 home-cardstyle">
+      <div class="row no-gutters">
+        <div class="col-md-5">
+          <img src="photo_resources/homepage/guide/DSC_0001.jpg" class="card-img" alt="加入TCC" width="100%" height="100%" style="border-radius: 25px" >
+        </div>
+        <div class="col-md-7">
+          <div class="card-body" align="center">
+            <div class="card-title noto title-style-card">加入TCC</div>
+            <div class="title-style-card-eng english-font" style="color: #2138ab;">Join us</div>
+            <hr width="40%" size="8px">
+            <button onclick="location.href='member.html'" type="button" class="btn home-button" style="background-color: #2138ab;color: white;">更多資訊</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4. 社團Q&A -->
+    <div class="card mb-3 home-cardstyle">
+      <div class="row no-gutters">
+        <div class="col-md-7">
+          <div class="card-body" align="center">
+            <div class="card-title noto title-style-card">社團Q&A</div>
+            <div class="title-style-card-eng english-font" style="color: #7e1e9c;">Questions</div>
+            <hr width="40%" size="8px">
+            <button onclick="location.href='QA.html'" type="button" class="btn home-button" style="background-color: #7e1e9c;color: white;">更多資訊</button>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img src="photo_resources/homepage/guide/TCS_7934.jpg" class="card-img" alt="社團Q&A" width="100%" height="100%" style="border-radius: 25px">
+        </div>
+      </div>
+    </div>
+    <!-- 客服信箱表單 -->
+    <div class="page-title noto" align="center">聯絡我們</div>
+    <hr size="8px" align="center" width="100%">
+    <!-- 以下為表單內容 -->
+    <form enctype="text/plain" accept-charset="utf-8">
+        <!-- 寄件者姓名 -->
+        <div align="center">
+            <br>
+            <div class="noto mail-title">您的名字 Name</div>
+            <input class="noto mail-button" id="nameText" type="text" name="Name" value size="60" placeholder="姓名 Name" required>
+            <!-- required 必填欄位，placeholder 預設內容 -->
+        </div>
+        <!-- 電郵地址 -->
+        <div align="center">
+            <br>
+            <div class="noto mail-title">電子信箱地址 Email</div>
+            <input class="noto mail-button" id="emailText" type="email" name="Email"  value size="60" placeholder="Email" required>
+        </div>
+        <!-- 行動電話 -->
+        <div align="center">
+            <br>
+            <div class="noto mail-title">行動電話 Cellphone Number</div>
+            <input class="noto mail-button" id="telText" type="tel" name="Phone"  value size="60" aria-invalid="false" placeholder="行動電話號碼 Cellphone Number" required>
+        </div>
+        <!-- 內容標題 -->
+        <div align="center">
+            <br>
+            <div class="noto mail-title">內容主旨 Message Title</div>
+            <input class="noto mail-button" id="subText" type="text" name="Subject" value size="60" placeholder="請填寫主旨" required>
+        </div>
+        <!-- 郵件內容 -->
+        <div align="center">
+            <br>
+            <div class="noto mail-title">其他想詢問的問題 Message</div>
+            <textarea class="noto mail-button" id="bodyText" name="your-message" cols="60" rows="10"  aria-required="true" aria-invalid="false" placeholder="撰寫內容" required></textarea>
+        </div>
+        <!-- 送出鍵 -->
+        <div align="center" style="margin-bottom: 30px">
+            <br>
+            <input type="button" class="noto send-button" value="寄出郵件" onclick="submitHandler();">
+            <a id="mailTo"></a>
+            <br>
+        </div>
+    </form>
+    <!-- 頁尾區 以下區塊在每一個頁面中皆相同 -->
+    <div style="height: 20px"></div>
+    <!-- 頁尾 連結主要分頁 -->
+    <ul class="nav justify-content-center" style="margin-left: 20px">
+      <li class="nav-item">
+        <a class="nav-link noto nav-link-bottom" href="about.html">社團介紹</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link noto nav-link-bottom" href="member.html">社團幹部</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link noto nav-link-bottom" href="joinform.html">加入TCC</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link noto nav-link-bottom" href="QA.html">社團Q&A</a>
+      </li>
+    </ul>
+    <!-- 頁尾 放置TCC Logo -->
+    <div align="center" style="margin-left: 20px; margin-top: 20px"><img src="photo_resources/headmark/logomark.png" alt="TCC LOGO" height="189" width="525"></div>
+    <hr size="8px" align="center" width="100%">
+    <!-- 頁尾 版權聲明 -->
+    <div align="center" class="english-font copyright">
+        © Copyright 2020 Taipei Camera Club. All rights reserved.&nbsp;&nbsp;Designer : Jason Tsai from TCC</div>
+
+    <!-- Bootstrap中有關Javascript的套件 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous">
+    </script>
+    <!-- 客服信箱使用的Javascript檔案 -->
+    <script SRC="js/email.js"></script>
+</body>
+</html>

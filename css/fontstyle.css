@@ -1,0 +1,71 @@
+/* 字型樣式設定 - 針對字體、字型的樣式管理 */
+/* noto: 使用思源黑體 Noto Sans TC */
+.noto{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* english-font: TCC的網頁中，英文字體以Helvetica為主 */
+.english-font{
+    font-family: Helvetica;
+}
+
+/* nav-link-page: Navigation區塊中分頁連結的字型樣式設定 */
+.nav-link-page{
+    font-weight: 500;
+    font-size: 19px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* nav-link-bottom: 底部區塊中分頁連結的字型樣式設定 */
+.nav-link-bottom{
+    font-weight: 500;
+    font-size: 19px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: black;
+}
+
+/* home-img-word: Home主頁中在封面相片中顯示的宣傳字樣 */
+.home-img-word{
+    text-align: center;
+    padding-top: 250px;
+    font-size: 50px;
+    font-weight: normal;
+    color: white;
+}
+
+/* home-img-tcc-word: Home主頁當中在封面相片中顯示的Taipei Camera Club字樣 */
+.home-img-tcc-word{
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+}
+
+/* copyright: 頁尾 版權條款所用樣式 */
+.copyright{
+    font-weight: lighter;
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #727272;
+}
+
+/* page-title: 分頁中的標題樣式*/
+.page-title{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* page-s-title: 分頁中的小標題*/
+.page-s-title{
+    font-weight: bolder;
+    color: #1b6d85;
+    margin-bottom: 10px;
+}
+
+/* paragraph: 網頁內文*/
+.paragraph{
+    font-size: 20px;
+    font-weight: lighter;
+}

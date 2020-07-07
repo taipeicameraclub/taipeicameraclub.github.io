@@ -1,0 +1,21 @@
+/* 聯絡我們表單格式設定 */
+/* mail-title: 表單小標題格式 */
+.mail-title{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* mail-button: 信件輸入區的格式 */
+.mail-button{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+/* send-button: 傳送鍵按鈕的格式 */
+.send-button{
+    background-color: #abc1c4;
+    font-weight: normal;
+    border-radius: 8px;
+    font-size: 20px;
+}

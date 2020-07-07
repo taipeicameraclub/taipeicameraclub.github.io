@@ -1,0 +1,38 @@
+/* 基本樣式設定 - 針對除了字體以外的樣式管理 */
+/* navigation: 網頁最上方區塊的樣式設定 */
+.navigation {
+    margin: 16px;
+    background-color: #bee3de;
+    border-radius: 13px;
+    filter: opacity(90%); /* 整個區塊的透明度 */
+}
+
+/* home-button-img: 網頁左上方Logo的樣式設定 */
+.home-button-img{
+    margin-right: 10px;
+}
+
+/* home-image: 主頁照片 */
+.home-image{
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 40px;
+}
+
+/* home-app: 主頁中提供Facebook, Instagram的圖示連結樣式 */
+.home-app{
+    border-radius: 45px;
+    filter: brightness(95%);
+}
+
+/* member-img: Member頁面中，個人照的格式 */
+.member-img{
+    height: 300px;
+    width: 300px;
+    border-radius: 19px;
+}
+
+
